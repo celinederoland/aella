@@ -2,7 +2,7 @@
     <display-name>Aella</display-name>
     <servlet>
         <servlet-name>Hello</servlet-name>
-        <servlet-class>Hello</servlet-class>
+        <servlet-class>celinederoland.controllers.Hello</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Hello</servlet-name>

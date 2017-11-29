@@ -1,6 +1,11 @@
+package celinederoland.controllers;
+
+import celinederoland.models.Dragoon;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+import com.google.gson.Gson;
 
 // Extend HttpServlet class
 public class Hello extends HttpServlet {
@@ -16,11 +21,15 @@ public class Hello extends HttpServlet {
             throws ServletException, IOException {
 
         // Set response content type
-        response.setContentType("text/html");
+        response.setContentType("application/json");
+
+        Dragoon aella = new Dragoon();
+        Gson gson = new Gson();
+        String json = gson.toJson(aella);
 
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
-        out.println("<h1>" + this.message + "</h1>");
+        out.println(json);
     }
 
     public void destroy() {
