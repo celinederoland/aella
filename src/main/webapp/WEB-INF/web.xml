@@ -1,11 +1,19 @@
 <web-app>
     <display-name>Aella</display-name>
     <servlet>
-        <servlet-name>Hello</servlet-name>
-        <servlet-class>celinederoland.controllers.Hello</servlet-class>
+        <servlet-name>Dragoons</servlet-name>
+        <servlet-class>celinederoland.controllers.DragoonListResource</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dragoon</servlet-name>
+        <servlet-class>celinederoland.controllers.DragoonResource</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern></url-pattern>
+        <servlet-name>Dragoons</servlet-name>
+        <url-pattern>/dragoons</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Dragoon</servlet-name>
+        <url-pattern>/dragoon/*</url-pattern>
     </servlet-mapping>
 </web-app>
