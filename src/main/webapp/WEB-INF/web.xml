@@ -1,19 +1,19 @@
 <web-app>
     <display-name>Aella</display-name>
     <servlet>
-        <servlet-name>Dragoons</servlet-name>
-        <servlet-class>celinederoland.controllers.DragoonListResource</servlet-class>
+        <servlet-name>Figures</servlet-name>
+        <servlet-class>celinederoland.controllers.FigureListResource</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Dragoon</servlet-name>
-        <servlet-class>celinederoland.controllers.DragoonResource</servlet-class>
+        <servlet-name>Figure</servlet-name>
+        <servlet-class>celinederoland.controllers.FigureResource</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Dragoons</servlet-name>
-        <url-pattern>/dragoons</url-pattern>
+        <servlet-name>Figures</servlet-name>
+        <url-pattern>/figures</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Dragoon</servlet-name>
-        <url-pattern>/dragoon/*</url-pattern>
+        <servlet-name>Figure</servlet-name>
+        <url-pattern>/figure/*</url-pattern>
     </servlet-mapping>
 </web-app>

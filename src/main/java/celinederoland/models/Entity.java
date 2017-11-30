@@ -2,7 +2,7 @@ package celinederoland.models;
 
 public class Entity {
 
-    protected Long id;
+    protected Long id = 0L;
     protected String name;
     protected String uri;
     protected String description;
